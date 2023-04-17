@@ -12,8 +12,15 @@ export class LoginComponent {
   onSubmit() {
     // You can implement your login logic here
     // For example, you can send the email and password to a backend API for authentication
-    console.log('Email:', this.email);
-    console.log('Password:', this.password);
+   
+      if (this.email === 'example@example.com' && this.password === 'password') {
+        // You can implement your login logic here
+        console.log('Login successful');
+      } else {
+        // You can handle login failure and show appropriate error messages
+        console.log('Login failed');
+      }
+    
   }
 
 }
