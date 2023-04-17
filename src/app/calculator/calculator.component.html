@@ -1,0 +1,13 @@
+<div class="calculator">
+    <input type="number" [(ngModel)]="num1" placeholder="Enter number 1">
+    <input type="number" [(ngModel)]="num2" placeholder="Enter number 2">
+    <div class="operations">
+      <button (click)="add()">+</button>
+      <button (click)="subtract()">-</button>
+      <button (click)="multiply()">*</button>
+      <button (click)="divide()">/</button>
+    </div>
+    <div class="result" *ngIf="result !== undefined">
+      Result: {{ result }}
+    </div>
+  </div>

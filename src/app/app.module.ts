@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { TodoComponent } from './todo/todo.component';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SearchComponent } from './search/search.component';
     HeaderComponent,
     TodoComponent,
     LoginComponent,
-    SearchComponent
+    SearchComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
