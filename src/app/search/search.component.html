@@ -1,0 +1,7 @@
+<div class="search-container">
+    <h2>Search App</h2>
+    <input type="text" [(ngModel)]="searchTerm" (input)="onSearch()" placeholder="Search...">
+    <ul>
+      <li *ngFor="let item of filteredItems">{{ item }}</li>
+    </ul>
+  </div>
