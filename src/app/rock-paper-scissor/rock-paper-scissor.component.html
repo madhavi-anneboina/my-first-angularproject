@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="choices">
+      <button (click)="playGame('rock')">Rock</button>
+      <button (click)="playGame('paper')">Paper</button>
+      <button (click)="playGame('scissors')">Scissors</button>
+    </div>
+    <div class="result">
+      <p *ngIf="result">{{ result }}</p>
+    </div>
+  </div>

@@ -9,6 +9,7 @@ import { TodoComponent } from './todo/todo.component';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { RockPaperScissorComponent } from './rock-paper-scissor/rock-paper-scissor.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     TodoComponent,
     LoginComponent,
     SearchComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    RockPaperScissorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .choices {
+    margin-top: 20px;
+  }
+  
+  .choices button {
+    margin-right: 10px;
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
