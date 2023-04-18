@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RockPaperScissorComponent } from './rock-paper-scissor/rock-paper-scissor.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { RockPaperScissorComponent } from './rock-paper-scissor/rock-paper-sciss
     LoginComponent,
     SearchComponent,
     CalculatorComponent,
-    RockPaperScissorComponent
+    RockPaperScissorComponent,
+    ContactFormComponent,
+ 
   ],
   imports: [
     BrowserModule,
