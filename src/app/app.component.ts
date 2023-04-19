@@ -11,6 +11,8 @@ export class AppComponent {
   counter : number = 0
   name : string ="madhavi"
   city : string = "Hyderabad"
+  show = true
+  movies = ["RRR" ,"Ts","St"]
 
   increment(){
     this.counter +=1
