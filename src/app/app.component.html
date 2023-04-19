@@ -1,8 +1,16 @@
-<!-- <app-header></app-header>
-<app-todo></app-todo> -->
+ <!-- <app-header></app-header> -->
+<!-- <app-todo></app-todo>  -->
 <!-- <app-login></app-login>
 <app-search></app-search> -->
 <!-- <app-calculator></app-calculator> -->
 <!-- <app-rock-paper-scissor></app-rock-paper-scissor> -->
-<app-contact-form></app-contact-form>
-<app-reactive-form></app-reactive-form>
+<!-- <app-contact-form></app-contact-form>
+<app-reactive-form></app-reactive-form> -->
+
+<button (click) = "increment()">counter</button>
+<button (click) ="decrement()">counter </button>
+
+Name : <input type ="text" (input) = "changeName($event)" />
+
+<h1> {{counter}}</h1>
+<h2>{{name}}</h2>

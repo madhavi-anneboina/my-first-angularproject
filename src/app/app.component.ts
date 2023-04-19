@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-angularproject';
+
+  counter : number = 0
+  name : string ="madhavi"
+
+  increment(){
+    this.counter +=1
+  }
+  decrement(){
+    this.counter -=1
+  }
+  changeName(e :any){
+    this.name = e.target.value
+  }
 }
