@@ -6,55 +6,18 @@
 <!-- <app-rock-paper-scissor></app-rock-paper-scissor> -->
 <!-- <app-contact-form></app-contact-form>
 <app-reactive-form></app-reactive-form> -->
+ <input type = "text"  [(ngModel)] = "op"/>
+<div [ngSwitch]="op">
+    <div *ngSwitchCase="'+'">{{num1}} + {{num2}} = {{num1+num2}}</div>
+    <div *ngSwitchCase="'-'">{{num1}} - {{num2}} = {{num1-num2}}</div>
+    <div *ngSwitchCase="'*'">{{num1}} * {{num2}} = {{num1* num2}}</div>
+    <div *ngSwitchCase="'/'">{{num1}} / {{num2}} = {{num1/num2}}</div>
+    <div *ngSwitchCase="'+'">Invalid Match</div>
 
-<button (click) = "increment()">counter</button>
-<button (click) ="decrement()">counter </button>
+</div>
 
-Name : <input type ="text" (input) = "changeName($event)" />
 
-city : <input type="text" [(ngModel)] = "city" />
-city name : {{city}}
-
-<button (click) = "updatecity()"> Upadte </button>
+ 
  
 
-<h1> {{counter}}</h1>
-<h2>{{name}}</h2>
-
- <h4 *ngIf="!movies; then load else sample"> </h4>
-
- <ng-template #sample>
-  {{movies}}
- </ng-template>
-
- <ng-template #load>
-    This is heading tag
-   </ng-template>
-
-   <table border="2">
-     <tr>
-        <td>Content</td>
-        <td>Index</td>
-        <td>Even</td>
-        <td>Odd</td>
-        <td>First</td>
-        <td>Last</td>
-     </tr>
-     <tr *ngFor = "let p of programme; index as i; even as e, odd as o; first as f; last as l ">
-        <td>{{p}}
-        </td>
-        <td>{{i}}</td>
-        <td>{{e}}</td>
-        <td>{{o}}</td>
-        <td>{{f}}</td>
-        <td>{{l}}</td>
-
-     </tr>
-   </table>
- 
- <!-- <table>
-    <tr *ngFor="let movie of movies">
-       {{movie}}
-    </tr>
- </table> -->
 

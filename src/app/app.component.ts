@@ -6,27 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angularproject';
-
-  counter : number = 0
-  name : string ="madhavi"
-  city : string = "Hyderabad"
-  show = true
-  // movies = ["RRR" ,"Ts","St"]
-  movies = ""
-
-  programme = ["java", "javascript","python","HTML","CSS","Angular","React"]
-
-  increment(){
-    this.counter +=1
-  }
-  decrement(){
-    this.counter -=1
-  }
-  changeName(e :any){
-    this.name = e.target.value
-  }
-  updatecity(){
-    this.city = "Banglore"
-  }
+ num1 : number = 4
+ num2 : number = 8
+ op : string = ""
 }
