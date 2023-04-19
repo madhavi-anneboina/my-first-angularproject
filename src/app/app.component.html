@@ -30,6 +30,27 @@ city name : {{city}}
  <ng-template #load>
     This is heading tag
    </ng-template>
+
+   <table border="2">
+     <tr>
+        <td>Content</td>
+        <td>Index</td>
+        <td>Even</td>
+        <td>Odd</td>
+        <td>First</td>
+        <td>Last</td>
+     </tr>
+     <tr *ngFor = "let p of programme; index as i; even as e, odd as o; first as f; last as l ">
+        <td>{{p}}
+        </td>
+        <td>{{i}}</td>
+        <td>{{e}}</td>
+        <td>{{o}}</td>
+        <td>{{f}}</td>
+        <td>{{l}}</td>
+
+     </tr>
+   </table>
  
  <!-- <table>
     <tr *ngFor="let movie of movies">

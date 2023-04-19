@@ -15,6 +15,8 @@ export class AppComponent {
   // movies = ["RRR" ,"Ts","St"]
   movies = ""
 
+  programme = ["java", "javascript","python","HTML","CSS","Angular","React"]
+
   increment(){
     this.counter +=1
   }
