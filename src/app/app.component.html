@@ -21,12 +21,19 @@ city name : {{city}}
 <h1> {{counter}}</h1>
 <h2>{{name}}</h2>
 
- <h4 *ngIf="show"> This is heading tag </h4>
+ <h4 *ngIf="!movies; then load else sample"> </h4>
 
- <table>
+ <ng-template #sample>
+  {{movies}}
+ </ng-template>
+
+ <ng-template #load>
+    This is heading tag
+   </ng-template>
+ 
+ <!-- <table>
     <tr *ngFor="let movie of movies">
        {{movie}}
     </tr>
- </table>
+ </table> -->
 
- 
