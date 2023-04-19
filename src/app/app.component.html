@@ -12,5 +12,11 @@
 
 Name : <input type ="text" (input) = "changeName($event)" />
 
+city : <input type="text" [(ngModel)] = "city" />
+city name : {{city}}
+
+<button (click) = "updatecity()"> Upadte </button>
+ 
+
 <h1> {{counter}}</h1>
 <h2>{{name}}</h2>

@@ -10,6 +10,7 @@ export class AppComponent {
 
   counter : number = 0
   name : string ="madhavi"
+  city : string = "Hyderabad"
 
   increment(){
     this.counter +=1
@@ -19,5 +20,8 @@ export class AppComponent {
   }
   changeName(e :any){
     this.name = e.target.value
+  }
+  updatecity(){
+    this.city = "Banglore"
   }
 }
