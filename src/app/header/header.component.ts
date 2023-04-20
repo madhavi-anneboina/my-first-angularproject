@@ -7,9 +7,7 @@ import { Component,Input } from '@angular/core';
 })
 export class HeaderComponent {
   
-  @Input() childtitle: any
-  @Input() d1 : any
-   @Input() a1: any
+ 
  
   constructor(){
   }
