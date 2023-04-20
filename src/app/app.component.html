@@ -6,15 +6,7 @@
 <!-- <app-rock-paper-scissor></app-rock-paper-scissor> -->
 <!-- <app-contact-form></app-contact-form>
 <app-reactive-form></app-reactive-form> -->
- <input type = "text"  [(ngModel)] = "op"/>
-<div [ngSwitch]="op">
-    <div *ngSwitchCase="'+'">{{num1}} + {{num2}} = {{num1+num2}}</div>
-    <div *ngSwitchCase="'-'">{{num1}} - {{num2}} = {{num1-num2}}</div>
-    <div *ngSwitchCase="'*'">{{num1}} * {{num2}} = {{num1* num2}}</div>
-    <div *ngSwitchCase="'/'">{{num1}} / {{num2}} = {{num1/num2}}</div>
-    <div *ngSwitchCase="'+'">Invalid Match</div>
-
-</div>
+<h1>{{name | uppercase}} {{marks | percent}} {{comapny | slice :2:7}}</h1>
 
 
  
