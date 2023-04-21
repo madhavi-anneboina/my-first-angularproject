@@ -9,7 +9,6 @@
 
 
  
-<app-header (customevent)="cdata=$event"></app-header>
-<h1> parent component :{{cdata}}</h1>
-
-
+<app-header #child></app-header>
+{{child.data}}
+{{child.array}}

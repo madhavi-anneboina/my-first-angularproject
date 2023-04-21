@@ -11,12 +11,9 @@ export class HeaderComponent {
  
  message =  "passed to parent"
 
- passtoParent(){
-  this.customevent.emit(this.message)
- }
- updatemessage(e :any){
-  this.message = e.target.value
- }
+ data = "This is demo of child to parent component"
+
+ array  = ["10","20","30","40"]
   constructor(){
   }
 
