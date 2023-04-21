@@ -7,9 +7,10 @@ import { HeaderComponent } from './header/header.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild (HeaderComponent) header:any
-  
-  test (){
-    this.header.passtoParent()
-  }
+ @ViewChild ("test") d : any
+ changediv(){
+  console.log(this.d)
+ }
+
+
 }

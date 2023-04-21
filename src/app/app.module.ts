@@ -13,6 +13,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RockPaperScissorComponent } from './rock-paper-scissor/rock-paper-scissor.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { NoteAppComponent } from './note-app/note-app.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     RockPaperScissorComponent,
     ContactFormComponent,
     ReactiveFormComponent,
+    NoteAppComponent,
  
   ],
   imports: [

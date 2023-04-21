@@ -1,0 +1,45 @@
+<p>note-app works!</p>
+
+<div class="container">
+    <h1>Note App</h1>
+  
+    <div class="note-form">
+      <h2>Add Note</h2>
+      <form (ngSubmit)="addNote()">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" [(ngModel)]="newNote.title" required>
+  
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" [(ngModel)]="newNote.content" required></textarea>
+  
+        <button type="submit">Add Note</button>
+      </form>
+    </div>
+  
+    <div class="note-list">
+      <h2>Note List</h2>
+      <ul>
+        <li *ngFor="let note of notes">
+          <h3>{{ note.title }}</h3>
+          <p>{{ note.content }}</p>
+          <button (click)="editNote(note)">Edit</button>
+          <button (click)="deleteNote(note)">Delete</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="note-edit-form" *ngIf="selectedNote">
+      <h2>Edit Note</h2>
+      <form (ngSubmit)="updateNote()">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" [(ngModel)]="selectedNote.title" required>
+  
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" [(ngModel)]="selectedNote.content" required></textarea>
+  
+        <button type="submit">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </form>
+    </div>
+  </div>
+  
