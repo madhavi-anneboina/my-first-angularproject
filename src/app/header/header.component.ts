@@ -7,13 +7,13 @@ import { Component,EventEmitter,Input,Output} from '@angular/core';
 })
 export class HeaderComponent {
   
- @Output()  customevent = new EventEmitter()
+ data = "demo of view child"
+
+ passtoParent(){
+  return this.data;
+ }
  
- message =  "passed to parent"
-
- data = "This is demo of child to parent component"
-
- array  = ["10","20","30","40"]
+ 
   constructor(){
   }
 
