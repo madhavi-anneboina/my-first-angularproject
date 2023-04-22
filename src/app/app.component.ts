@@ -10,6 +10,7 @@ export class AppComponent {
  @ViewChild ("test") d : any
  changediv(){
   console.log(this.d)
+  this.d.nativeElement.innerText = "yellow"
  }
 
 
