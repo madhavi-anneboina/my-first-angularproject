@@ -1,4 +1,4 @@
-import { Component,ViewChild } from '@angular/core';
+import { Component,ViewChild, ViewChildren } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 
 @Component({
@@ -7,11 +7,15 @@ import { HeaderComponent } from './header/header.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- @ViewChild ("test") d : any
- changediv(){
-  console.log(this.d)
-  this.d.nativeElement.innerText = "yellow"
- }
+@ViewChild ("para") p:any;
+
+@ViewChildren ("tera") t : any
+
+pest(){
+  console.log(this.p.nativeElement.innerText)
+  console.log(this.t._results[0].nativeElement.innerText)
+}
+ 
 
 
 }
