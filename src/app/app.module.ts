@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule,Routes } from '@angular/router';
+import { TestService } from './test.service';
 
 
 const routes:Routes= [
@@ -59,7 +60,7 @@ const routes:Routes= [
     RouterModule.forRoot(routes)
 
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

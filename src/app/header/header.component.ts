@@ -1,4 +1,6 @@
 import { Component,EventEmitter,Input,Output} from '@angular/core';
+import { TestService } from '../test.service';
+
 
 @Component({
   selector: 'app-header',
@@ -7,6 +9,6 @@ import { Component,EventEmitter,Input,Output} from '@angular/core';
 })
 export class HeaderComponent {
   
- 
+ constructor(){}
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestService } from '../test.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  constructor( private ts:TestService) {}
+  mobiles = this.ts.mobiles
+
+  addMobile(){
+    this.ts.mobiles.push("periperi")
+  }
 
 }
