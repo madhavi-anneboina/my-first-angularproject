@@ -19,6 +19,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule,Routes } from '@angular/router';
 import { TestService } from './test.service';
+import { UsersComponent } from './users/users.component';
+import { UsercardComponent } from './usercard/usercard.component';
 
 
 const routes:Routes= [
@@ -50,6 +52,8 @@ const routes:Routes= [
     AboutComponent,
     ContactComponent,
     HomeComponent,
+    UsersComponent,
+    UsercardComponent,
  
   ],
   imports: [
