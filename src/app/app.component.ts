@@ -7,14 +7,10 @@ import { HeaderComponent } from './header/header.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-@ViewChild ("para") p:any;
 
-@ViewChildren ("tera") t : any
 
-pest(){
-  console.log(this.p.nativeElement.innerText)
-  console.log(this.t._results[0].nativeElement.innerText)
-}
+
+
  
 
 

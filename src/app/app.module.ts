@@ -14,6 +14,24 @@ import { RockPaperScissorComponent } from './rock-paper-scissor/rock-paper-sciss
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { NoteAppComponent } from './note-app/note-app.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { RouterModule,Routes } from '@angular/router';
+
+
+const routes:Routes= [
+  {
+    path : '' , component : HomeComponent
+  },
+  {
+    path : 'about' , component : AboutComponent
+  },
+  {
+    path : 'contact' , component : ContactComponent
+  },
+ 
+]
 
 
 @NgModule({
@@ -28,13 +46,17 @@ import { NoteAppComponent } from './note-app/note-app.component';
     ContactFormComponent,
     ReactiveFormComponent,
     NoteAppComponent,
+    AboutComponent,
+    ContactComponent,
+    HomeComponent,
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
 
   ],
   providers: [],

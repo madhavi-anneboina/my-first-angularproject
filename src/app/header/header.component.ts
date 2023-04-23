@@ -7,14 +7,6 @@ import { Component,EventEmitter,Input,Output} from '@angular/core';
 })
 export class HeaderComponent {
   
- data = "demo of view child"
-
- passtoParent(){
-  return this.data;
- }
  
- 
-  constructor(){
-  }
 
 }

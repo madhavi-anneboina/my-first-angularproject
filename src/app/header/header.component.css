@@ -1,0 +1,15 @@
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    gap :20px;
+    background-color: grey;
+    height:50px
+}
