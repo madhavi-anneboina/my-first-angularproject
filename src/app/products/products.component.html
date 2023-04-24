@@ -1,0 +1,22 @@
+<div class="cards">
+    <div *ngFor = "let product of products">
+        <div class="card">
+            <div class="card-header">
+                <img  class="image" src="{{product.imag}}"/>
+                <div class="info">
+                    <p class="name">{{product.name.slice(0,15)}}</p>
+                    <p class="profile-desc"></p>
+
+                </div>
+
+            </div>
+            <div class="action">
+                <button class="btn btn-pink">Buy</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

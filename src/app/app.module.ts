@@ -21,6 +21,8 @@ import { RouterModule,Routes } from '@angular/router';
 import { TestService } from './test.service';
 import { UsersComponent } from './users/users.component';
 import { UsercardComponent } from './usercard/usercard.component';
+import { ProductsComponent } from './products/products.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 const routes:Routes= [
@@ -28,10 +30,10 @@ const routes:Routes= [
     path : '' , component : HomeComponent
   },
   {
-    path : 'about' , component : AboutComponent
+    path : 'products' , component : ProductsComponent
   },
   {
-    path : 'contact' , component : ContactComponent
+    path : '* *' , component : NotfoundComponent
   },
  
 ]
@@ -54,6 +56,7 @@ const routes:Routes= [
     HomeComponent,
     UsersComponent,
     UsercardComponent,
+    ProductsComponent,
  
   ],
   imports: [
