@@ -18,7 +18,7 @@
 
 <router-outlet></router-outlet> -->
 
-<button (click)="getData()">get data </button>
+<button (click)="getData()" *ngIf="!data">get data </button>
 <div *ngIf="data">
 <div class="cards">
     <div *ngFor = "let d of data">
