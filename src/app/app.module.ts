@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +25,7 @@ import { UsersComponent } from './users/users.component';
 import { UsercardComponent } from './usercard/usercard.component';
 import { ProductsComponent } from './products/products.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+
 
 
 const routes:Routes= [
@@ -78,6 +81,7 @@ const routes:Routes= [
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
 
   ],

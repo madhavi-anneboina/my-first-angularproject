@@ -1,5 +1,7 @@
 import { Component,ViewChild, ViewChildren } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,16 @@ import { HeaderComponent } from './header/header.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-constructor(){}
+constructor(private http:HttpClient){}
 
+data :any
+getData(){
+  this.http.get("https://fakestoreapi.com/products")
+  .subscribe((data)=>{
+    this.data = data;
 
-
+  })
+}
  
 
 
