@@ -30,10 +30,21 @@ const routes:Routes= [
     path : '' , component : HomeComponent
   },
   {
-    path : 'home' , component : HomeComponent
+    path : 'home' , component : HomeComponent,
+   children : [
+    {
+      path : 'homeChild1' , component : TodoComponent
+    },
+    {
+      path : 'homeChild2' , component : SearchComponent
+    },
+   ]
   },
   {
-    path : 'products' , component : ProductsComponent
+    path : 'about' , component : AboutComponent
+  },
+  {
+    path : 'contact' , component : ContactComponent
   },
   {
     path : '* *' , component : NotfoundComponent
