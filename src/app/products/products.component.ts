@@ -13,17 +13,17 @@ export class ProductsComponent {
  constructor(private ps:ProductService, private ar:ActivatedRoute){
   this.ar.queryParamMap.subscribe((qparams) =>{
     let category = qparams .get('category')
-    if(category){
-      this.products = this.ps.products.filter(
-        (p,i,parray) =>{
-          return p.category == category
+    // if(category){
+    //   this.products = this.ps.products.filter(
+    //     (p,i,parray) =>{
+    //       return p.category == category
 
-        }
-      )
-    }
-    else {
-      this.products = ps.products
-    }
+    //     }
+    //   )
+    // }
+    // else {
+    //   this.products = ps.products
+    // }
   })
  }
 

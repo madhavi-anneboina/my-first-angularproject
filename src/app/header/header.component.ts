@@ -1,5 +1,6 @@
 import { Component,EventEmitter,Input,Output} from '@angular/core';
 import { TestService } from '../test.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,6 +10,10 @@ import { TestService } from '../test.service';
 })
 export class HeaderComponent {
   
- constructor(){}
+ constructor(private r:Router){}
+ navigate(){
+  this.r.navigate(['/home'])
+
+ }
 
 }
