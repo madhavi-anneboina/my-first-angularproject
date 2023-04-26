@@ -25,6 +25,8 @@ import { UsersComponent } from './users/users.component';
 import { UsercardComponent } from './usercard/usercard.component';
 import { ProductsComponent } from './products/products.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { TodoformComponent } from './todoform/todoform.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 
 
@@ -74,6 +76,8 @@ const routes:Routes= [
     UsersComponent,
     UsercardComponent,
     ProductsComponent,
+    TodoformComponent,
+    TodolistComponent,
  
   ],
   imports: [
