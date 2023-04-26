@@ -27,6 +27,7 @@ import { ProductsComponent } from './products/products.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { TodoformComponent } from './todoform/todoform.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { TodoService } from './todo.service';
 
 
 
@@ -89,7 +90,7 @@ const routes:Routes= [
     RouterModule.forRoot(routes)
 
   ],
-  providers: [TestService],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
