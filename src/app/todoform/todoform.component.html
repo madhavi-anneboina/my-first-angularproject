@@ -11,8 +11,8 @@
 
     </div>
     <div class="col-3">
-        <button class="btn btn-success" (click) = "addTask()">Add </button>  &nbsp;&nbsp;
-        <button class="btn btn-danger" (click) = "resetForm()"> Reset </button> 
+        <button class="btn btn-success" (click) = "addTask()" [disabled]=!taskInput.length>Add </button>  &nbsp;&nbsp;
+        <button class="btn btn-danger" (click) = "resetForm()"  [disabled]=!taskInput.length> Reset </button> 
 
     </div>
 

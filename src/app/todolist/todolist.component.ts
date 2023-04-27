@@ -15,4 +15,8 @@ export class TodolistComponent {
 
   }
 
+  deleteTodo(index:any){
+    this.ts.deleteTodo(index)
+  }
+
 }

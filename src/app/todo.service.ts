@@ -27,4 +27,8 @@ export class TodoService {
 
 
   }
+  deleteTodo(index:any){
+    this.todoList.splice(index,1)
+
+  }
 }
