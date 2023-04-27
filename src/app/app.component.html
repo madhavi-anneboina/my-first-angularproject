@@ -51,7 +51,7 @@
 
 
 
-<div class="container" *ngIf="mobiles mob-table">
+<div class="container mob-table" *ngIf="mobiles; else err">
     <div class="headers">
      <h2 class="table-title">Manage Mobiles</h2>
      <button class="btn add">Add Mobile</button>
@@ -81,7 +81,7 @@
                 <button class="btn btn-primary">edit</button>
               </td>
               <td>
-                <button class="btn btn-danger">delete</button>
+                <button class="btn btn-danger"(click) ="deleteMobile(mobile.id)">delete</button>
               </td>
             </tr>
 
@@ -89,3 +89,6 @@
     </table>
 
 </div>
+<ng-template #err>
+    <p>error fetching data</p>
+</ng-template>

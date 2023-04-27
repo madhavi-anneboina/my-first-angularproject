@@ -13,4 +13,7 @@ export class MobileService {
     
   return this.http.get(this.url)
   }
+  deleteMobile(id:any){
+   return this.http.delete(this.url+"/"+id)
+  }
 }
