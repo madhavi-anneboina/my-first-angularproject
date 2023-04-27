@@ -3,6 +3,7 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { MobileService } from './mobile.service';
+import { AnimationKeyframesSequenceMetadata } from '@angular/animations';
 
 
 
@@ -66,8 +67,16 @@ constructor(private ms:MobileService){}
   this.ms.fetchMibiles().subscribe(
     (data) => {
       this.mobiles = data
+    },
+    (error)=>{
+      console.log(error)
     }
   )
+
+ }
+
+ deleteMobile(id:AnimationKeyframesSequenceMetadata){
+  this.ms.deleteMobile(id)
 
  }
 
