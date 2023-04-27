@@ -51,10 +51,10 @@
 
 
 
-<div class="container" *ngIf="mobiles">
+<div class="container" *ngIf="mobiles mob-table">
     <div class="headers">
      <h2 class="table-title">Manage Mobiles</h2>
-     <button class="btn btn-primary">Add Mobile</button>
+     <button class="btn add">Add Mobile</button>
     </div>
 
     <table>
@@ -71,6 +71,15 @@
             </tr>
            
         </thead>
+        <tbody class="text-center" >
+            <tr *ngFor="let mobile of mobiles">
+              <td>{{mobile.name}}</td>
+              <td>{{mobile.price}}</td>
+              <td>{{mobile.ram}}</td>
+              <td>{{mobile.storage}}</td>
+            </tr>
+
+        </tbody>
     </table>
 
 </div>

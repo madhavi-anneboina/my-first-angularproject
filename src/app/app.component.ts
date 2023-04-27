@@ -11,7 +11,26 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  mobiles = true
+  mobiles = [
+    {
+      name :"xyz",
+      price : 20000,
+      ram : 6,
+      storage : 64
+    },
+    {
+      name :"abc",
+      price : 10000,
+      ram : 16,
+      storage : 164
+    },
+    {
+      name :"mnm",
+      price : 8000,
+      ram : 62,
+      storage : 164
+    }
+  ]
 constructor(){}
 
 // // Content about observable 
