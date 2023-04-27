@@ -21,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule,Routes } from '@angular/router';
 import { TestService } from './test.service';
+import { MobileService } from './mobile.service';
 import { UsersComponent } from './users/users.component';
 import { UsercardComponent } from './usercard/usercard.component';
 import { ProductsComponent } from './products/products.component';
@@ -90,7 +91,7 @@ const routes:Routes= [
     RouterModule.forRoot(routes)
 
   ],
-  providers: [],
+  providers: [MobileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

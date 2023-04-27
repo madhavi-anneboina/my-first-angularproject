@@ -2,6 +2,7 @@ import { Component,ViewChild, ViewChildren } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { MobileService } from './mobile.service';
 
 
 
@@ -11,27 +12,28 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  mobiles = [
-    {
-      name :"xyz",
-      price : 20000,
-      ram : 6,
-      storage : 64
-    },
-    {
-      name :"abc",
-      price : 10000,
-      ram : 16,
-      storage : 164
-    },
-    {
-      name :"mnm",
-      price : 8000,
-      ram : 62,
-      storage : 164
-    }
-  ]
-constructor(){}
+  mobiles:any
+  // [
+  //   {
+  //     name :"xyz",
+  //     price : 20000,
+  //     ram : 6,
+  //     storage : 64
+  //   },
+  //   {
+  //     name :"abc",
+  //     price : 10000,
+  //     ram : 16,
+  //     storage : 164
+  //   },
+  //   {
+  //     name :"mnm",
+  //     price : 8000,
+  //     ram : 62,
+  //     storage : 164
+  //   }
+  // ]
+constructor(private ms:MobileService){}
 
 // // Content about observable 
 // myobs = new Observable(
@@ -59,7 +61,15 @@ constructor(){}
 
 //   })
 // }
- 
+ ngOnInit() : void {
+
+  this.ms.fetchMibiles().subscribe(
+    (data) => {
+      this.mobiles = data
+    }
+  )
+
+ }
 
 
 }
