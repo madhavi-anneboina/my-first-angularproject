@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TodoService {
+  taskId=5
+
   todoList = [
     {
       id : 1, 'task' : "Task1"
@@ -20,4 +22,9 @@ export class TodoService {
   ]
 
   constructor() { }
+  addTodo(taskName:any){
+    this.todoList.push({"id":this.taskId++, "task" : taskName})
+
+
+  }
 }

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./todoform.component.css']
 })
 export class TodoformComponent {
+  taskInput=""
+  addTask(){
+
+  }
+  resetForm(){
+    
+  }
 
 }

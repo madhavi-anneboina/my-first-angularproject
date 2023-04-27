@@ -6,13 +6,13 @@
     <div class="col-6">
         <div class="form-group">
         <label for="newTask">Add New : </label>
-        <input type="text" class="form-control" id="newTask"/>
+        <input type="text" class="form-control" id="newTask" [(ngModel)]="taskInput"/>
         </div>
 
     </div>
     <div class="col-3">
-        <button class="btn btn-success">Add </button>  &nbsp;&nbsp;
-        <button class="btn btn-danger"> Reset </button> 
+        <button class="btn btn-success" (click) = "addTask()">Add </button>  &nbsp;&nbsp;
+        <button class="btn btn-danger" (click) = "resetForm()"> Reset </button> 
 
     </div>
 
