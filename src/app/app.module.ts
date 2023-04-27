@@ -90,7 +90,7 @@ const routes:Routes= [
     RouterModule.forRoot(routes)
 
   ],
-  providers: [TodoService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
