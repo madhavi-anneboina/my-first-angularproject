@@ -65,10 +65,10 @@ constructor(private ms:MobileService){}
  ngOnInit() : void {
 
   this.ms.fetchMibiles().subscribe(
-    (data) => {
+    (data:any) => {
       this.mobiles = data
     },
-    (error)=>{
+    (error:any)=>{
       console.log(error)
     }
   )

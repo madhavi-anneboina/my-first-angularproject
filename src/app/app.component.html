@@ -51,7 +51,8 @@
 
 
 
-<div class="container mob-table" *ngIf="mobiles; else err">
+<div class="container mob-table" >
+    <!-- *ngIf="mobiles; else err" -->
     <div class="headers">
      <h2 class="table-title">Manage Mobiles</h2>
      <button class="btn add">Add Mobile</button>
@@ -92,3 +93,12 @@
 <ng-template #err>
     <p>error fetching data</p>
 </ng-template>
+
+
+<div class="form-wrapper">
+    <div class="mobile-form">
+        <h2 class="text-center text-info">{{formHeader}}</h2>
+
+    </div>
+
+</div>
