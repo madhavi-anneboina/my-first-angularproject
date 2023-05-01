@@ -14,6 +14,10 @@ import { AnimationKeyframesSequenceMetadata } from '@angular/animations';
 })
 export class AppComponent {
   mobiles:any
+  greet = "Hello this is ng content "
+
+  clients = ["cilent1","cilent2","cilent3","cilent4"]
+  employes = ["employe1","employe2","employe3","employe4"]
   // [
   //   {
   //     name :"xyz",
