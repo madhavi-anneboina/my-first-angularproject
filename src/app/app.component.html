@@ -9,6 +9,8 @@
     #un = "ngModel"
 
     />
+    <p  class="err-msg" *ngIf="un.touched &&un.errors?.['required']">User name required</p>
+    <p  class="err-msg" *ngIf="un.touched &&un.errors?.['minlength']">Username should be 3 characters</p>
     <label class="m-2">Password:</label>
     <input required
     minlength="8"
@@ -19,4 +21,5 @@
     #p = "ngModel"
 
     />
+    <button (cilck)="show(un,p)" class="btn btn-primary mt-2"> Click</button>
 </form>

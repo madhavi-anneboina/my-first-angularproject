@@ -26,3 +26,6 @@
 th{
     text-align: center;
 }
+.err-msg{
+    color:red
+}
