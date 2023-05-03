@@ -24,5 +24,9 @@
     #p = "ngModel"
 
     />
+    <ng-container *ngIf="p.touched">
+        <p  class="err-msg" *ngIf="p.errors?.['required']">Password required</p>
+        <p  class="err-msg" *ngIf="p.errors?.['minlength']">Password should be min 8 characters</p>
+        </ng-container>
     <button (cilck)="show(un,p)" class="btn btn-primary mt-2"> Click</button>
 </form>
