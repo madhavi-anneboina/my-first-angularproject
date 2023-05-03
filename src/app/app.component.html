@@ -20,7 +20,8 @@
  {{n}}
 </div>
 
-
 </ng-container>
-<!-- <ng-content></ng-content>
-<ng-template></ng-template> -->
+<div *ngIf="login; else temp">
+Madhavi logged in sucessfully
+</div>
+<ng-template #temp> This is from ng template</ng-template>
