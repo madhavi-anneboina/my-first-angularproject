@@ -1,4 +1,4 @@
-<form>
+<!-- <form>
     <label class="m-2">User name:</label>
     <input required
     minlength="3"
@@ -22,11 +22,21 @@
     ngModel
     name="pwd"
     #p = "ngModel"
-
     />
     <ng-container *ngIf="p.touched">
         <p  class="err-msg" *ngIf="p.errors?.['required']">Password required</p>
         <p  class="err-msg" *ngIf="p.errors?.['minlength']">Password should be min 8 characters</p>
         </ng-container>
     <button (cilck)="show(un,p)" class="btn btn-primary mt-2"> Click</button>
+</form> -->
+
+
+ngForm and ngSubmit
+
+<form ngForm #loginForm="ngForm" (ngSubmit)="submit(loginForm)">
+    username:
+    <input type="text" name="username"minlength="5" ngModel #un="ngModel" class="form-control w-50 m-2"/>
+    Password:
+    <input type="password" name="password" minlength="7" ngModel #pwd="ngModel" class="form-control w-50 m-2"/>
+    <button class="btn btn-secondary">Submit</button>
 </form>

@@ -19,6 +19,9 @@ export class AppComponent {
     console.log(un)
     console.log(p)
 
+  }
+  submit(form:any){
+    console.log(form)
 
   }
  
