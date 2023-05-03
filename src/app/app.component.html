@@ -9,8 +9,11 @@
     #un = "ngModel"
 
     />
-    <p  class="err-msg" *ngIf="un.touched &&un.errors?.['required']">User name required</p>
-    <p  class="err-msg" *ngIf="un.touched &&un.errors?.['minlength']">Username should be 3 characters</p>
+    <ng-container *ngIf="un.touched">
+    <p  class="err-msg" *ngIf="un.errors?.['required']">User name required</p>
+    <p  class="err-msg" *ngIf="un.errors?.['minlength']">Username should be 3 characters</p>
+    </ng-container>
+
     <label class="m-2">Password:</label>
     <input required
     minlength="8"
