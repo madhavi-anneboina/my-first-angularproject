@@ -16,7 +16,9 @@
 <app-child [clients] ="employes"></app-child> -->
 
 <ng-container *ngFor="let n of [0,8,9,70,335]">
-    {{n}}
+<div *ngIf="n%2 == 0">
+ {{n}}
+</div>
 
 
 </ng-container>
