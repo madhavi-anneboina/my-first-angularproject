@@ -1,6 +1,4 @@
-<app-child [clients] ="clients">
-    {{greet}}
-  
+
     <!-- <ul>
         <li>
             list 1
@@ -12,7 +10,15 @@
             list 3
         </li>
     </ul> -->
-    <h6 class="pc">Hello this is going to child  component</h6>
+    <!-- <h6 class="pc">Hello this is going to child  component</h6>
 </app-child>
 <h6>Hello this is parent component</h6>
-<app-child [clients] ="employes"></app-child>
+<app-child [clients] ="employes"></app-child> -->
+
+<ng-container *ngFor="let n of [0,8,9,70,335]">
+    {{n}}
+
+
+</ng-container>
+<!-- <ng-content></ng-content>
+<ng-template></ng-template> -->
